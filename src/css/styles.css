@@ -1,0 +1,525 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* HERO SECTION */
+
+.hero-section {
+  background-color: #000000;
+}
+
+.hero-section__main-content {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 100px 0px 125px 0px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.hero-section__text-area {
+  max-width: 70%;
+  padding: 10px;
+}
+
+.hero-section__main-title {
+  font-family: Poppins;
+  font-size: 60px;
+  font-weight: 300;
+  color: #ffffff;
+  margin: 100px 0 20px 0;
+}
+.hero-section__main-description {
+  font-family: Poppins;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.hero-section__info-area {
+  margin-top: 100px;
+  max-width: 30%;
+  padding: 10px;
+}
+
+.hero-section__info-box {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.hero-section__icons {
+  fill: #83b171;
+  color: #83b171;
+  border: 3px solid #83b171;
+  font-size: 33px;
+  text-align: center;
+  margin-right: 15px;
+  padding: 16.5px;
+}
+
+.hero-icons {
+  width: 33px;
+  height: 33px;
+}
+
+.hero-section__icons:hover {
+  position: relative;
+  animation: MoveUp 1s forwards;
+}
+
+@keyframes MoveUp {
+  from {
+    bottom: 0;
+  }
+  50% {
+    bottom: 0;
+  }
+  to {
+    bottom: 8px;
+  }
+}
+
+.hero-section__call-text,
+.hero-section__schedule-text {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.hero-section__call-number {
+  font-family: Poppins;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+/* OFFER SECTION */
+
+.offer-section {
+  background-color: #e0e0e0;
+  z-index: 1;
+  padding-top: 15px;
+  padding-bottom: 22px;
+  margin-bottom: 100px;
+}
+
+.offer-section__main-content {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.offer-section__boxes {
+  padding: 10px;
+  width: 25%;
+}
+
+.offer-section__icon-box {
+  fill: #83b171;
+  color: #83b171;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.offer-icons {
+  width: 56.5px;
+  height: 50px;
+}
+
+.offer-icons:hover {
+  position: relative;
+  animation: MoveUpDown 1s linear infinite;
+  color: #5ac231;
+}
+
+@keyframes MoveUpDown {
+  from {
+    bottom: 0;
+  }
+  50% {
+    bottom: 10px;
+  }
+  to {
+    bottom: 0;
+  }
+}
+
+.offer-section__paragraph {
+  font-family: Poppins;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  color: #333333;
+}
+
+/* TEXT SECTION */
+
+.text-section {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.text-section__header h2 {
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: 400;
+  color: #83b171;
+  margin-bottom: 20px;
+}
+
+.text-section__paragraphs p {
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 27px;
+  margin-bottom: 24px;
+  color: #7a7a7a;
+}
+/* GALLERY SECTION */
+
+.gallery-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  grid-gap: 20px;
+  grid-template-rows: 300px;
+  grid-auto-rows: 300px;
+  max-width: 1920px;
+  margin: 100px auto;
+  padding: 0 20px;
+}
+
+.gallery-section__first-picture:hover,
+.gallery-section__second-picture:hover,
+.gallery-section__third-picture:hover,
+.gallery-section__fourth-picture:hover,
+.gallery-section__fifth-picture:hover {
+  opacity: 0.3;
+  color: black;
+  transition: 0.5s ease;
+}
+
+.gallery-section__first-picture {
+  background-image: url("https://www.baysidepavers.com/wp-content/uploads/2021/07/retaining-walls-and-freestanding-walls-designed-and-installed.jpeg");
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+}
+
+.gallery-section__second-picture {
+  background-image: url("https://www.baysidepavers.com/wp-content/uploads/2021/07/Retaining-Wall-Contractor-300x169.jpg");
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.gallery-section__third-picture {
+  background-image: url("https://www.baysidepavers.com/wp-content/uploads/2021/07/Belgard-riviera-pavers-patio-225x300.jpg");
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.gallery-section__fourth-picture {
+  background-image: url("https://www.baysidepavers.com/wp-content/uploads/2021/07/Front-yard-Pavers-and-Artificial-Grass-300x225.jpg");
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.gallery-section__fifth-picture {
+  background-image: url("https://www.baysidepavers.com/wp-content/uploads/2021/07/retaining-wall-construction-1080x675-1-300x188.jpeg");
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* NEWSLETTER QUOTE */
+
+.newsletter-quote {
+  background-color: #626164;
+  clip-path: polygon(74% 21%, 100% 0, 100% 100%, 0 100%, 0 0);
+  padding: 32px;
+  margin-top: 100px;
+  /* min-height: 265px; */
+}
+
+.newsletter-quote__main-content {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.newsletter-quote__main-header {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 300;
+  color: #83b171;
+  margin-top: 65px;
+  padding-bottom: 20px;
+}
+.newsletter-quote__schedule-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter-quote__schedule {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 10px;
+}
+
+.newsletter-quote__secondary-header {
+  font-family: Poppins;
+  font-size: 42px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.newsletter-quote__main-button {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #02010100;
+  color: #ffffff;
+  border-style: solid;
+  border-width: 4px 4px 4px 4px;
+  border-color: #83b171;
+  border-radius: 5px;
+  padding: 20px 40px;
+  margin-right: 80px;
+  cursor: pointer;
+}
+
+.newsletter-quote__main-button:hover {
+  color: #ffffff;
+  background-color: #83b171;
+}
+
+/* SERVICES HELP */
+
+.services-help {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.services-help__text-box {
+  padding: 10px;
+  margin: 50px 0 50px 0;
+}
+
+.services-help__main-header {
+  font-family: Poppins;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 31px;
+  color: #83b171;
+}
+
+.services-help__secondary-header {
+  font-family: Poppins;
+  font-size: 44px;
+  font-weight: 300;
+  line-height: 55px;
+  color: #83b171;
+}
+
+.services-help__offers-box {
+  display: flex;
+  flex-direction: row;
+  min-height: 228px;
+  gap: 20px;
+}
+
+.services-help__offer-box {
+  background-color: #626164;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+}
+
+.services-help__offer-box:hover {
+  background-color: #83b171;
+}
+
+.services-help__offer-heading {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: underline;
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+  height: 100%;
+  padding: 20px;
+}
+
+/* ABOUT PAGE - HERO SECTION */
+
+.second-hero {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.second-hero__main-header {
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 600;
+  color: #54595f;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.second-hero__main-paragraph {
+  font-family: Poppins;
+  font-size: 19px;
+  font-weight: 400;
+  color: #54595f;
+  margin-bottom: 30px;
+}
+
+.second-hero__picture-box-1 {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  width: 100%;
+  gap: 20px;
+}
+
+.second-hero__content-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-hero__first-picture,
+.second-hero__second-picture,
+.second-hero__third-picture,
+.second-hero__fourth-picture {
+  object-fit: cover;
+}
+
+.second-hero__header {
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: underline;
+  color: #83b171;
+  cursor: pointer;
+}
+
+/* ABOUT PAGE - CONTACT US */
+
+.contact-us {
+  min-height: 400px;
+  background-color: #394d40;
+}
+
+.contact-us__main-header {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 300;
+  color: #83b171;
+}
+
+.contact-us__secondary-header {
+  font-family: Poppins;
+  font-size: 42px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.contact-us__content-flex {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 130px 20px 0 20px;
+}
+
+.contact-us__button-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-right: 100px;
+}
+
+.contact-us__main-button {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 17px 55px 17px 55px;
+  background-color: #02010100;
+  color: #ffffff;
+  border: 4px solid #83b171;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-us__secondary-button {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 17px 35px 17px 35px;
+  background-color: #02010100;
+  color: #ffffff;
+  border: 4px solid #83b171;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-us__main-button:hover,
+.contact-us__secondary-button:hover {
+  color: #ffffff;
+  background-color: #83b171;
+}
