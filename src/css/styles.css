@@ -22,7 +22,7 @@ body {
 
 img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 /* HERO SECTION */
@@ -218,61 +218,64 @@ img {
   padding: 0 20px;
 }
 
-.gallery-section__first-picture:hover,
-.gallery-section__second-picture:hover,
-.gallery-section__third-picture:hover,
-.gallery-section__fourth-picture:hover,
-.gallery-section__fifth-picture:hover {
-  opacity: 0.3;
-  color: black;
-  transition: 0.5s ease;
+.gallery-section__image-overlay {
+  position: relative;
+  cursor: pointer;
+}
+.gallery-section__image-overlay img {
+  width: 100%;
+  vertical-align: top;
+}
+.gallery-section__image-overlay:after,
+.gallery-section__image-overlay:before {
+  position: absolute;
+  opacity: 0;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+.gallery-section__image-overlay:after {
+  content: "\A";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.gallery-section__image-overlay:hover:after,
+.gallery-section__image-overlay:hover:before {
+  opacity: 1;
 }
 
 .gallery-section__first-picture {
-  background-image: url("https://www.baysidepavers.com/wp-content/uploads/2021/07/retaining-walls-and-freestanding-walls-designed-and-installed.jpeg");
   width: 100%;
   height: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   grid-column: 1 / 3;
   grid-row: 1 / 3;
 }
 
 .gallery-section__second-picture {
-  background-image: url("https://www.baysidepavers.com/wp-content/uploads/2021/07/Retaining-Wall-Contractor-300x169.jpg");
   width: 100%;
   height: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .gallery-section__third-picture {
-  background-image: url("https://www.baysidepavers.com/wp-content/uploads/2021/07/Belgard-riviera-pavers-patio-225x300.jpg");
   width: 100%;
   height: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .gallery-section__fourth-picture {
-  background-image: url("https://www.baysidepavers.com/wp-content/uploads/2021/07/Front-yard-Pavers-and-Artificial-Grass-300x225.jpg");
   width: 100%;
   height: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .gallery-section__fifth-picture {
-  background-image: url("https://www.baysidepavers.com/wp-content/uploads/2021/07/retaining-wall-construction-1080x675-1-300x188.jpeg");
   width: 100%;
   height: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+}
+
+.gallery-section__picture-fit {
+  object-fit: cover;
 }
 
 /* NEWSLETTER QUOTE */
@@ -282,7 +285,6 @@ img {
   clip-path: polygon(74% 21%, 100% 0, 100% 100%, 0 100%, 0 0);
   padding: 32px;
   margin-top: 100px;
-  /* min-height: 265px; */
 }
 
 .newsletter-quote__main-content {
@@ -429,7 +431,12 @@ img {
   flex-direction: row;
   padding: 10px;
   width: 100%;
+  height: 100%;
   gap: 20px;
+}
+.second-hero__picture-box-2 {
+  width: 100%;
+  height: 100%;
 }
 
 .second-hero__content-box {
@@ -437,6 +444,8 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 .second-hero__first-picture,
@@ -444,6 +453,7 @@ img {
 .second-hero__third-picture,
 .second-hero__fourth-picture {
   object-fit: cover;
+  cursor: pointer;
 }
 
 .second-hero__header {
