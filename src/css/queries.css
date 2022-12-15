@@ -7,7 +7,6 @@
 
   .hero-section__main-title {
     margin: 0 0 20px 0;
-    font-size: 30px;
   }
 
   .hero-section__info-box {
@@ -30,6 +29,8 @@
 
   .hero-section__text-area {
     margin-bottom: 70px;
+    max-width: 100%;
+    padding: 15px;
   }
 
   .hero-section__info-area {
@@ -51,17 +52,38 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 100px;
   }
 
   .newsletter-quote__main-button {
     margin-right: 0;
+  }
+
+  .second-hero__header {
+    font-size: 24px;
+  }
+
+  .contact-us__button-content {
+    padding-right: 50px;
+  }
+
+  .lg-next {
+    right: 1% !important;
+  }
+
+  .lg-prev {
+    left: 1% !important;
+  }
+
+  .services-help__offers-box {
+    gap: 0;
   }
 }
 
 @media (max-width: 800px) {
   .second-hero__picture-box-1 {
     flex-direction: column;
+    gap: 0;
   }
   .contact-us__button-content {
     padding-right: 0;
@@ -77,16 +99,18 @@
   .contact-us__secondary-header {
     font-size: 30px;
   }
-  .second-hero__header {
-    font-size: 24px;
-  }
   .offer-section__main-content {
     flex-direction: column;
     align-items: center;
   }
+
+  .offer-section__boxes {
+    width: 100%;
+    margin: 15px;
+  }
   .services-help__offers-box {
     flex-direction: column;
-    gap: 0;
+    padding: 20px;
   }
   .services-help__offer-box {
     height: 200px;

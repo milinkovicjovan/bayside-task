@@ -10,6 +10,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="/node_modules/lightgallery/css/lightgallery-bundle.css"
+    />
     <title>Document</title>
   </head>
   <body>
@@ -146,52 +150,57 @@
       </div>
     </section>
     <section>
-      <div class="gallery-section">
-        <div
+      <div id="lightgallery" class="gallery-section">
+        <a
+          href="https://www.baysidepavers.com/wp-content/uploads/2021/07/retaining-walls-and-freestanding-walls-designed-and-installed.jpeg"
           class="gallery-section__first-picture gallery-section__image-overlay"
         >
           <img
+            alt="Retaining Wall"
             src="https://www.baysidepavers.com/wp-content/uploads/2021/07/retaining-walls-and-freestanding-walls-designed-and-installed.jpeg"
-            alt="Reatining Walls"
             class="gallery-section__picture-fit"
           />
-        </div>
-        <div
+        </a>
+        <a
+          href="https://www.baysidepavers.com/wp-content/uploads/2021/07/Retaining-Wall-Contractor.jpg"
           class="gallery-section__second-picture gallery-section__image-overlay"
         >
           <img
-            src="https://www.baysidepavers.com/wp-content/uploads/2021/07/Retaining-Wall-Contractor-300x169.jpg"
             alt="Retaining Wall Contractor"
+            src="https://www.baysidepavers.com/wp-content/uploads/2021/07/Retaining-Wall-Contractor.jpg"
             class="gallery-section__picture-fit"
           />
-        </div>
-        <div
+        </a>
+        <a
+          href="https://www.baysidepavers.com/wp-content/uploads/2021/07/Belgard-riviera-pavers-patio.jpg"
           class="gallery-section__third-picture gallery-section__image-overlay"
         >
           <img
-            src="https://www.baysidepavers.com/wp-content/uploads/2021/07/Belgard-riviera-pavers-patio-225x300.jpg"
-            alt="Belgard Riviera"
+            alt="Belgard riviera pavers patio"
+            src="https://www.baysidepavers.com/wp-content/uploads/2021/07/Belgard-riviera-pavers-patio.jpg"
             class="gallery-section__picture-fit"
           />
-        </div>
-        <div
+        </a>
+        <a
+          href="https://www.baysidepavers.com/wp-content/uploads/2021/07/Front-yard-Pavers-and-Artificial-Grass.jpg"
           class="gallery-section__fourth-picture gallery-section__image-overlay"
         >
           <img
-            src="https://www.baysidepavers.com/wp-content/uploads/2021/07/Front-yard-Pavers-and-Artificial-Grass-300x225.jpg"
-            alt="Front Yard Pavers"
+            alt="Front Yard Pavers and Artificial Grass"
+            src="https://www.baysidepavers.com/wp-content/uploads/2021/07/Front-yard-Pavers-and-Artificial-Grass.jpg"
             class="gallery-section__picture-fit"
           />
-        </div>
-        <div
+        </a>
+        <a
+          href="https://www.baysidepavers.com/wp-content/uploads/2021/07/retaining-wall-construction-1080x675-1.jpeg"
           class="gallery-section__fifth-picture gallery-section__image-overlay"
         >
           <img
-            src="https://www.baysidepavers.com/wp-content/uploads/2021/07/retaining-wall-construction-1080x675-1-300x188.jpeg"
-            alt="Retaining Wall Construction"
+            alt="Tiered Reatining Wall"
+            src="https://www.baysidepavers.com/wp-content/uploads/2021/07/retaining-wall-construction-1080x675-1.jpeg"
             class="gallery-section__picture-fit"
           />
-        </div>
+        </a>
       </div>
     </section>
     <section class="text-section">
@@ -270,5 +279,20 @@
         </div>
       </div>
     </section>
+
+    <script src="/node_modules/lightgallery/lightgallery.umd.js"></script>
+    <script src="/node_modules/lightgallery/plugins/share/lg-share.umd.js"></script>
+    <script src="/node_modules/lightgallery/plugins/zoom/lg-zoom.umd.js"></script>
+    <script src="/node_modules/lightgallery/plugins/fullscreen/lg-fullscreen.umd.js"></script>
+    <script>
+      lightGallery(document.getElementById("lightgallery"), {
+        plugins: [lgShare, lgZoom, lgFullscreen],
+        speed: 500,
+        licenseKey: "your_license_key",
+        download: false,
+        zoom: true,
+        zoomFromOrigin: true,
+      });
+    </script>
   </body>
 </html>
