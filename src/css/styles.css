@@ -196,6 +196,36 @@ img {
   margin-bottom: 20px;
 }
 
+.text-section__sub-header h4 {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 700;
+  color: #7a7a7a;
+  margin-bottom: 20px;
+}
+
+.text-section__unordered-list ul {
+  padding-left: 35px;
+  padding-bottom: 25px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #7a7a7a;
+}
+.text-section__unordered-list li {
+  padding-bottom: 10px;
+}
+
+.text-section__ordered-list ol {
+  padding-left: 40px;
+  padding-bottom: 25px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #7a7a7a;
+}
+.text-section__ordered-list li {
+  padding-bottom: 15px;
+}
+
 .text-section__paragraphs p {
   font-family: Roboto;
   font-size: 15px;
