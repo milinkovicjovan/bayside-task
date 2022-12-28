@@ -182,13 +182,13 @@ img {
 
 /* TEXT SECTION */
 
-.text-section {
+.trafficrunners-content {
   max-width: 1140px;
   margin: 0 auto;
   padding: 10px;
 }
 
-.text-section__header h2 {
+.trafficrunners-content h2 {
   font-family: Roboto;
   font-size: 30px;
   font-weight: 400;
@@ -196,7 +196,7 @@ img {
   margin-bottom: 20px;
 }
 
-.text-section__sub-header h4 {
+.trafficrunners-content h4 {
   font-family: Roboto;
   font-size: 24px;
   font-weight: 700;
@@ -204,29 +204,31 @@ img {
   margin-bottom: 20px;
 }
 
-.text-section__unordered-list ul {
+.trafficrunners-content ul {
   padding-left: 35px;
   padding-bottom: 25px;
   font-size: 16px;
   font-weight: 700;
   color: #7a7a7a;
 }
-.text-section__unordered-list li {
+
+.trafficrunners-content ul li {
   padding-bottom: 10px;
 }
 
-.text-section__ordered-list ol {
+.trafficrunners-content ol {
   padding-left: 40px;
   padding-bottom: 25px;
   font-size: 16px;
   font-weight: 700;
   color: #7a7a7a;
 }
-.text-section__ordered-list li {
+
+.trafficrunners-content ol li {
   padding-bottom: 15px;
 }
 
-.text-section__paragraphs p {
+.trafficrunners-content p {
   font-family: Roboto;
   font-size: 15px;
   font-weight: 400;
