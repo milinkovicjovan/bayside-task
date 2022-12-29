@@ -46,6 +46,7 @@
   .gallery-section__first-picture {
     grid-column: 1;
     grid-row: 1;
+    padding-right: 0;
   }
 
   .newsletter-quote__schedule {
@@ -114,5 +115,8 @@
   }
   .services-help__offer-box {
     height: 200px;
+  }
+  .doing-best__image-part {
+    display: none;
   }
 }
