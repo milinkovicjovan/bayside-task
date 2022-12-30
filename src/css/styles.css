@@ -55,9 +55,12 @@ img {
 }
 
 .doing-best__image-part {
-  padding: 30px;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 15px;
 }
 
 .doing-best__image-box {
@@ -76,15 +79,15 @@ img {
 
 .doing-best__content-box img {
   border-radius: 220px 220px 220px 220px;
-  width: 220px;
-  height: 220px;
-  max-width: 220px;
+  width: 110px;
+  height: 110px;
+  /* max-width: 110px; */
   object-fit: cover;
 }
 
 .doing-best__content-box h2 {
   font-family: Poppins;
-  font-size: 25px;
+  font-size: 20px;
   color: #83b171;
   text-decoration: underline;
   margin-top: 20px;
@@ -93,7 +96,7 @@ img {
 
 /* HERO SECTION */
 
-.hero-section {
+.trafficrunners-hero-section {
   background-image: url("https:\/\/www.baysidepavers.com\/wp-content\/uploads\/2021\/07\/PS70EcoVenAntTanBld5913-1080x675-1.jpeg");
   background-repeat: no-repeat;
   background-position: center;
@@ -102,12 +105,12 @@ img {
   position: relative;
 }
 
-.hero-section__image-overlay:after,
-.hero-section__image-overlay:before {
+.trafficrunners-hero-section__overlay:after,
+.trafficrunners-hero-section__overlay:before {
   position: absolute;
   opacity: 0;
 }
-.hero-section__image-overlay:after {
+.trafficrunners-hero-section__overlay:after {
   content: "\A";
   width: 100%;
   height: 100%;
@@ -116,97 +119,27 @@ img {
   background: rgba(0, 0, 0, 0.6);
 }
 
-.hero-section__image-overlay:after,
-.hero-section__image-overlay:before {
+.trafficrunners-hero-section__overlay:after,
+.trafficrunners-hero-section__overlay:before {
   opacity: 1;
 }
 
-.hero-section__main-content {
+.trafficrunners-hero-section__content {
   max-width: 1140px;
   margin: 0 auto;
-  padding: 100px 0px 125px 0px;
-  display: flex;
-  flex-direction: row;
+  padding: 200px 0px 200px 0px;
   width: 100%;
   position: relative;
   z-index: 1000;
 }
 
-.hero-section__text-area {
-  max-width: 70%;
-  padding: 10px;
-}
-
-.hero-section__main-title {
+.trafficrunners-hero-section__content h1 {
   font-family: Poppins;
   font-size: 60px;
   font-weight: 300;
   color: #ffffff;
-  margin: 30px 0 20px 0;
-}
-.hero-section__main-description {
-  font-family: Poppins;
-  font-size: 18px;
-  color: #ffffff;
-}
-
-.hero-section__info-area {
-  margin-top: 35px;
-  max-width: 30%;
   padding: 10px;
-}
-
-.hero-section__info-box {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 20px;
-}
-
-.hero-section__icons {
-  fill: #83b171;
-  color: #83b171;
-  border: 3px solid #83b171;
-  font-size: 33px;
   text-align: center;
-  margin-right: 15px;
-  padding: 16.5px;
-}
-
-.hero-icons {
-  width: 33px;
-  height: 33px;
-}
-
-.hero-section__icons:hover {
-  position: relative;
-  animation: MoveUp 1s forwards;
-}
-
-@keyframes MoveUp {
-  from {
-    bottom: 0;
-  }
-  50% {
-    bottom: 0;
-  }
-  to {
-    bottom: 8px;
-  }
-}
-
-.hero-section__call-text,
-.hero-section__schedule-text {
-  font-family: Poppins;
-  font-size: 24px;
-  font-weight: 600;
-  color: #ffffff;
-  text-decoration: underline;
-}
-
-.hero-section__call-number {
-  font-family: Poppins;
-  font-size: 20px;
-  color: #ffffff;
 }
 
 /* OFFER SECTION */
@@ -216,7 +149,6 @@ img {
   z-index: 1;
   padding-top: 15px;
   padding-bottom: 22px;
-  margin-bottom: 100px;
 }
 
 .offer-section__main-content {
@@ -276,7 +208,7 @@ img {
 
 .trafficrunners-content {
   max-width: 1140px;
-  margin: 0 auto;
+  margin: 100px auto;
   padding: 10px;
 }
 
@@ -562,13 +494,13 @@ img {
 
 /* ABOUT PAGE - HERO SECTION */
 
-.second-hero {
+.trafficrunners__second-hero {
   max-width: 1140px;
   margin: 0 auto;
   padding: 10px;
 }
 
-.second-hero__main-header {
+.trafficrunners__second-hero__main-header {
   font-family: Poppins;
   font-size: 30px;
   font-weight: 600;
@@ -577,7 +509,7 @@ img {
   margin-bottom: 10px;
 }
 
-.second-hero__main-paragraph {
+.trafficrunners__second-hero__main-paragraph {
   font-family: Poppins;
   font-size: 19px;
   font-weight: 400;
@@ -585,19 +517,19 @@ img {
   margin-bottom: 30px;
 }
 
-.second-hero__picture-box-1 {
+.trafficrunners__second-hero__picture-box-1 {
   display: flex;
   flex-direction: row;
   width: 100%;
   height: 100%;
   gap: 20px;
 }
-.second-hero__picture-box-2 {
+.trafficrunners__second-hero__picture-box-2 {
   width: 100%;
   height: 100%;
 }
 
-.second-hero__content-box {
+.trafficrunners__second-hero__content-box {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -606,15 +538,15 @@ img {
   height: 100%;
 }
 
-.second-hero__first-picture,
-.second-hero__second-picture,
-.second-hero__third-picture,
-.second-hero__fourth-picture {
+.trafficrunners__second-hero__first-picture,
+.trafficrunners__second-hero__second-picture,
+.trafficrunners__second-hero__third-picture,
+.trafficrunners__second-hero__fourth-picture {
   object-fit: cover;
   cursor: pointer;
 }
 
-.second-hero__header {
+.trafficrunners__second-hero__header {
   font-family: Poppins;
   font-size: 30px;
   font-weight: 600;
@@ -691,4 +623,94 @@ img {
 .contact-us__secondary-button:hover {
   color: #ffffff;
   background-color: #83b171;
+}
+
+@media (max-width: 1035px) {
+  .doing-best__image-part {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .gallery-section {
+    grid-template-columns: 1fr;
+    grid-template-rows: 400px;
+    grid-auto-rows: 400px;
+  }
+  .gallery-section__first-picture {
+    grid-column: 1;
+    grid-row: 1;
+    padding-right: 0;
+  }
+
+  .newsletter-quote__schedule {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+  }
+
+  .newsletter-quote__main-button {
+    margin-right: 0;
+  }
+
+  .trafficrunners__second-hero__header {
+    font-size: 24px;
+  }
+
+  .contact-us__button-content {
+    padding-right: 50px;
+  }
+
+  .lg-next {
+    right: 1% !important;
+  }
+
+  .lg-prev {
+    left: 1% !important;
+  }
+
+  .services-help__offers-box {
+    gap: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .trafficrunners-hero-section__content h1 {
+    font-size: 31px;
+  }
+  .trafficrunners__second-hero__picture-box-1 {
+    flex-direction: column;
+    gap: 0;
+  }
+  .contact-us__button-content {
+    padding-right: 0;
+  }
+  .contact-us__content-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px 0 20px;
+    gap: 50px;
+  }
+  .contact-us__secondary-header {
+    font-size: 30px;
+  }
+  .offer-section__main-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .offer-section__boxes {
+    width: 100%;
+    margin: 15px;
+  }
+  .services-help__offers-box {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .services-help__offer-box {
+    height: 200px;
+  }
 }
